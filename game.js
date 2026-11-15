@@ -1,17 +1,22 @@
+
 function getComputerChoice () {
     let num = Math.random();
     
     if (num < 1/3) {
-        return "Rock";
+        return "rock";
     } else if (num >= 2/3) {
-        return "Paper";
+        return "paper";
     } else {
-        return "Scissors";
+        return "scissors";
     }
 }
 
 function getHumanChoice () {
-    return prompt("Enter your choice:");
+    return prompt("Enter your choice:").toLowerCase();
 }
 
 console.log(getHumanChoice());
+
+function playRound (computerSelection ,humanSelection) {
+    return;
+}
