@@ -34,3 +34,23 @@ h1 {
     font-size: 50px;
     margin-left: 210px;
 }
+
+#round-result {
+    color: #0A174E;
+    font-size: 50px;
+    margin-left: 210px;
+}
+
+#scores {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.scores{
+    color: #0A174E;
+    font-size: 25px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 10px 0px 10px;
+}
