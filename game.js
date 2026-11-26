@@ -56,6 +56,6 @@ function getComputerChoice () {
 }
 
 function getHumanChoice () {
-    return prompt("Enter your choice:").toLowerCase();
+    const rock = document.querySelector()
 }
 

@@ -1,0 +1,36 @@
+body {
+    background-color: #F5D042;
+    font-family: "Instrument Serif", serif;
+    font-weight: 800;
+}
+
+button {
+    background-color: #0A174E;
+    border-style: hidden;
+    color: #F5D042;
+    height: 60px;
+    padding: 20px 50px 55px 50px;
+    width: 300px;
+    font-size: 30px;
+    justify-content: center;
+    margin: 0px 50px;
+    font-family: "Instrument Serif", serif;
+    font-weight: 800;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: #0e1c5e;
+}   
+
+.buttons {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+h1 {
+    color: #0A174E;
+    font-size: 50px;
+    margin-left: 210px;
+}
