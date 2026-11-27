@@ -7,19 +7,17 @@ const computerScoreDisplay = document.querySelector("#computer-score");
 const gameResultDisplay = document.querySelector("#game-result");
 const roundCount = document.querySelector("#round-count");
 
-function playGame () {
+let humanScore = 0;
+let computerScore = 0;
+let round = 0;
 
-    let humanScore = 0;
-    let computerScore = 0;
-    let round = 0;
+displayScoresAndRound();
+
+function playGame () {
 
     handleHumanChoice(rock,"rock");
     handleHumanChoice(paper,"paper");
     handleHumanChoice(scissors,"scissors");
-
-    humanScoreDisplay.textContent = `Your Score: ${humanScore}`;
-    computerScoreDisplay.textContent = `Computer Score: ${computerScore}`;
-    roundCount.textContent=`Round: ${round}`;
 
     function handleHumanChoice (choiceVar,choiceString) {
         choiceVar.addEventListener("click", () => {
@@ -79,9 +77,8 @@ function playGame () {
             humanScore++;
             round++;
         }
-            humanScoreDisplay.textContent = `Your Score: ${humanScore}`;
-            computerScoreDisplay.textContent = `Computer Score: ${computerScore}`;
-            roundCount.textContent=`Round: ${round}`;
+
+        displayScoresAndRound();
     }   
 }
 
@@ -101,3 +98,8 @@ function getComputerChoice () {
     }
 }
 
+function displayScoresAndRound () {
+    humanScoreDisplay.textContent = `Your Score: ${humanScore}`;
+    computerScoreDisplay.textContent = `Computer Score: ${computerScore}`;
+    roundCount.textContent=`Round: ${round}`;
+}
